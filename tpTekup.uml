@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Persistence</ID>
+  <OriginalElement>JavaeeElement:/a03db3c5/tpTekup/tpTekup/jpa/JPA/PersistenceModel</OriginalElement>
+  <nodes>
+    <node x="-137.5" y="643.9245103782398">Ordeer#file://C:/Users/medme/IdeaProjects/tpTekup/src/main/java/com/example/tptekup/Entities/Ordeer.java</node>
+    <node x="130.65340909090912" y="459.75">User#file://C:/Users/medme/IdeaProjects/tpTekup/src/main/java/com/example/tptekup/Entities/User.java</node>
+    <node x="410.1151145485344" y="374.9245103782398">Subcategory#file://C:/Users/medme/IdeaProjects/tpTekup/src/main/java/com/example/tptekup/Entities/Subcategory.java</node>
+    <node x="177.25" y="706.0">Provider#file://C:/Users/medme/IdeaProjects/tpTekup/src/main/java/com/example/tptekup/Entities/Provider.java</node>
+    <node x="-29.4375" y="481.22727272727275">Product#file://C:/Users/medme/IdeaProjects/tpTekup/src/main/java/com/example/tptekup/Entities/Product.java</node>
+    <node x="43.875" y="717.0">Customer#file://C:/Users/medme/IdeaProjects/tpTekup/src/main/java/com/example/tptekup/Entities/Customer.java</node>
+    <node x="393.668367346939" y="605.1428571428572">Category#file://C:/Users/medme/IdeaProjects/tpTekup/src/main/java/com/example/tptekup/Entities/Category.java</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Subcategory#file://C:/Users/medme/IdeaProjects/tpTekup/src/main/java/com/example/tptekup/Entities/Subcategory.java" target="Category#file://C:/Users/medme/IdeaProjects/tpTekup/src/main/java/com/example/tptekup/Entities/Category.java" relationship="RELATION">
+      <point x="0.0" y="-49.0" />
+      <point x="459.168367346939" y="374.9245103782398" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="Ordeer#file://C:/Users/medme/IdeaProjects/tpTekup/src/main/java/com/example/tptekup/Entities/Ordeer.java" target="Product#file://C:/Users/medme/IdeaProjects/tpTekup/src/main/java/com/example/tptekup/Entities/Product.java" relationship="RELATION">
+      <point x="0.0" y="-60.0" />
+      <point x="-79.5" y="557.4155844155846" />
+      <point x="36.0625" y="557.4155844155846" />
+      <point x="0.0" y="60.0" />
+    </edge>
+    <edge source="Customer#file://C:/Users/medme/IdeaProjects/tpTekup/src/main/java/com/example/tptekup/Entities/Customer.java" target="User#file://C:/Users/medme/IdeaProjects/tpTekup/src/main/java/com/example/tptekup/Entities/User.java" relationship="INHERITANCE">
+      <point x="27.0" y="-38.0" />
+      <point x="122.875" y="680.0" />
+      <point x="191.65340909090912" y="680.0" />
+      <point x="0.0" y="93.0" />
+    </edge>
+    <edge source="Customer#file://C:/Users/medme/IdeaProjects/tpTekup/src/main/java/com/example/tptekup/Entities/Customer.java" target="Ordeer#file://C:/Users/medme/IdeaProjects/tpTekup/src/main/java/com/example/tptekup/Entities/Ordeer.java" relationship="RELATION">
+      <point x="-27.0" y="-38.0" />
+      <point x="68.875" y="680.0" />
+      <point x="-79.5" y="680.0" />
+      <point x="0.0" y="60.0" />
+    </edge>
+    <edge source="Provider#file://C:/Users/medme/IdeaProjects/tpTekup/src/main/java/com/example/tptekup/Entities/Provider.java" target="User#file://C:/Users/medme/IdeaProjects/tpTekup/src/main/java/com/example/tptekup/Entities/User.java" relationship="INHERITANCE">
+      <point x="-31.25" y="-49.0" />
+      <point x="206.5" y="680.0" />
+      <point x="191.65340909090912" y="680.0" />
+      <point x="0.0" y="93.0" />
+    </edge>
+    <edge source="Product#file://C:/Users/medme/IdeaProjects/tpTekup/src/main/java/com/example/tptekup/Entities/Product.java" target="Subcategory#file://C:/Users/medme/IdeaProjects/tpTekup/src/main/java/com/example/tptekup/Entities/Subcategory.java" relationship="RELATION">
+      <point x="0.0" y="-60.0" />
+      <point x="52.15625" y="481.22727272727275" />
+      <point x="52.15625" y="489.7987012987013" />
+      <point x="-21.75" y="489.7987012987013" />
+      <point x="-21.75" y="343.8571428571429" />
+      <point x="475.6151145485344" y="343.8571428571429" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="Provider#file://C:/Users/medme/IdeaProjects/tpTekup/src/main/java/com/example/tptekup/Entities/Provider.java" target="Product#file://C:/Users/medme/IdeaProjects/tpTekup/src/main/java/com/example/tptekup/Entities/Product.java" relationship="RELATION">
+      <point x="31.25" y="-49.0" />
+      <point x="269.0" y="680.0" />
+      <point x="276.5" y="680.0" />
+      <point x="276.5" y="412.9090909090908" />
+      <point x="227.54593060159402" y="412.9090909090908" />
+      <point x="227.54593060159402" y="410.8271103896104" />
+      <point x="36.0625" y="410.8271103896104" />
+      <point x="36.0625" y="459.0" />
+      <point x="35.85714285714289" y="459.0" />
+      <point x="-0.20535714285711038" y="-45.08441558441558" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.7" showDependencies="false" x="193.0" y="699.0" />
+  <SelectedNodes>
+    <node>Category#file://C:/Users/medme/IdeaProjects/tpTekup/src/main/java/com/example/tptekup/Entities/Category.java</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Embeddables</Category>
+    <Category>Properties</Category>
+    <Category>Superclasses</Category>
+  </Categories>
+</Diagram>
+
