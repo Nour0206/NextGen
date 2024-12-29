@@ -1,27 +1,23 @@
 package com.example.tptekup.Entities;
 
+
+import com.example.tptekup.Entities.Enum.ERole;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
-
-@Entity
-@Table(name = "`order`")
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class Order {
+@Entity
+@Table(name = "roles")
+public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Integer id;
 
-    @ManyToOne
-    @JoinColumn(name = "client_id")
-    private User client;
-
-    private double totalPrice;
-
-    private Date date;
+    @Enumerated(EnumType.STRING)
+    @Column(length = 20)
+    private ERole name;
 }

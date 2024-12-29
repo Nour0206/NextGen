@@ -17,6 +17,7 @@ public class TpTekupApplication {
     CommandLineRunner initDatabase(UserRepository userRepository) {
         return args -> {
 
+
         };
     }
 }
