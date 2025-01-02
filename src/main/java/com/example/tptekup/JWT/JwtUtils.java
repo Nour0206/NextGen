@@ -4,6 +4,7 @@ import io.jsonwebtoken.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
@@ -19,7 +20,7 @@ public class JwtUtils {
     @Value("${nextgen.app.jwtExpirationMs}")
     private long jwtExpirationMs;
 
-    public String generateJwtToken(UserDetailsImpl userPrincipal) {
+    public String generateJwtToken(UserDetails userPrincipal) {
         return generateTokenFromUsername(userPrincipal.getUsername());
     }
 
