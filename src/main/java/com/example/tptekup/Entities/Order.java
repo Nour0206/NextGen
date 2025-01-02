@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import java.util.Date;
 
 @Entity
+@Table(name = "`order`")
 @NoArgsConstructor
 @AllArgsConstructor
 @Data

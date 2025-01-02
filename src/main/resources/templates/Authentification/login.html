@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="@{/assets/images/logo-16x16.png}" />
+    <title>Argon - Social Network</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@1.9.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Styles -->
+    <link href="@{/assets/css/bootstrap/bootstrap.min.css}" rel="stylesheet">
+
+    <link href="@{/assets/css/bootstrap/bootstrap.min.css}}" rel="stylesheet">
+    <link href="@{/assets/css/style.css}"  rel="stylesheet">
+    <link href="@{/assets/css/auth.css}" rel="stylesheet">
+    <link href="@{/assets/css/media.css}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="row ht-100v flex-row-reverse no-gutters">
+    <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <div class="signup-form">
+            <div class="auth-logo text-center mb-5">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-1">
+                        <img src="{{ asset('../assets/img/logot.png') }}" class="logo-img" alt="Logo" style="max-width: 60px; max-height: 60px;">
+                    </div>
+                    <div class="col-md-6">
+                        <p>NexGen</p>
+                        <span>Wear The Future</span>
+                    </div>
+                </div>
+            </div>
+            <span class="text-center d-block"><h2>Welcome !</h2></span><br>
+            <form th:action="@{/login}" method="post" th:object="${loginRequest}">
+                <!-- Email Field -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" th:field="${loginRequest.username}" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Password Field -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required th:field="${loginRequest.password}" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Forgot Password Link -->
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <a href="forgot-password.html">Forgot password?</a>
+                    </div>
+                </div>
+                <!-- Remember Me Checkbox -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <label class="custom-control material-checkbox">
+                            <input type="checkbox" name="_remember_me" class="material-control-input">
+                            <span class="material-control-indicator"></span>
+                            <span class="material-control-description">Remember Me</span>
+                        </label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="col-md-6 text-right">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-lg btn-primary">Sign in</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Background Image (Optional) -->
+    <div class="col-md-6 auth-bg-image d-flex justify-content-center align-items-center"></div>
+</div>
+
+<!-- Core JS -->
+<script src="@{assets/js/jquery/jquery-3.3.1.min.js}"></script>
+<script src="@{assets/js/popper/popper.min.js}"></script>
+<script src="@{/assets/js/bootstrap/bootstrap.min.js}"></script>
+<!-- Optional JS -->
+<script src="@{/assets/js/app.js}"></script>
+</body>
+
+</html>
